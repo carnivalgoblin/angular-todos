@@ -1,6 +1,6 @@
 <mat-list>
   <mat-list-item *ngFor="let todo of todos" routerLink="/todo/{{todo.id}}">
-    <mat-icon matListItemIcon>menu_open</mat-icon>
+
       <div matListItemTitle>{{todo.title}}</div>
       <div matListItemLine>ID: {{todo.id}}, Status: {{todo.done ? 'Erledigt' : 'Offen'}}</div>
   </mat-list-item>
