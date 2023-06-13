@@ -15,7 +15,7 @@
     </mat-list-item>
   </mat-list>
 
-  <button mat-raised-button class="todo-button" type="button" (click)="delete(todo.id)">Delete</button>
-  <button mat-raised-button class="todo-button" type="button" routerLink="/todo/{{todo.id}}/edit">Editieren</button>
+  <button mat-raised-button color="warn" class="todo-button" type="button" (click)="delete(todo.id)">Delete</button>
+  <button mat-raised-button color="accent" class="todo-button" type="button" routerLink="/todo/{{todo.id}}/edit">Editieren</button>
   <button mat-raised-button class="todo-button" type="button" (click)="goBack()">Back</button>
 </div>
