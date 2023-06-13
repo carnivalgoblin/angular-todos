@@ -1,0 +1,32 @@
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: #eee;
+  display: inline-block;
+  color: black;
+     padding: 1rem;
+     border-radius: 4px;
+     font-size: 1rem;
+  margin: 20px 0.5rem;
+ /*border: 1px solid red !important;*/
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+

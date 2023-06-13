@@ -1,0 +1,10 @@
+<div class="todo-form">
+
+  <div class="todo-id">ID: <input type="number" [(ngModel)]="todo.id"></div>
+
+  <div>Name: <input type="text" [(ngModel)]="todo.title"></div>
+
+  <div>Status: <input type="checkbox" [(ngModel)] ="todo.status"></div>
+
+  <button (click)="onSubmit()">Speichern</button>
+</div>

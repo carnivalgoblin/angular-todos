@@ -1,0 +1,29 @@
+.todo-form {
+  margin-bottom: 10px;
+}
+
+.todo-form div{
+  margin-bottom: 5px;
+  height: 30px;
+}
+
+.todotodo input {
+  margin-bottom: 5px;
+  height: 25px;
+}
+
+.todo-form .todo-id {
+  font-weight: bold;
+}
+
+.todo-form button {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
