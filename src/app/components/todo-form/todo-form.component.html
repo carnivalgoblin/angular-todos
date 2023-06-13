@@ -10,7 +10,7 @@
     <input matInput type="number" [(ngModel)]="todo.id">
   </mat-form-field>
   <section class="example-section">
-    <mat-checkbox class="example-margin" [(ngModel)]="todo.status">{{todo.status ? 'Erledigt' : 'Offen'}}</mat-checkbox>
+    <mat-checkbox class="example-margin" [(ngModel)]="todo.done">{{todo.done ? 'Erledigt' : 'Offen'}}</mat-checkbox>
   </section>
 
   <button mat-raised-button color="accent" (click)="onSubmit()">Speichern</button>

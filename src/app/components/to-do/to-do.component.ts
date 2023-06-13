@@ -11,13 +11,12 @@ import {TodoService} from "../../services/todo.service";
 })
 export class ToDoComponent implements OnInit{
 
-  @Input() todo!: todo
+  @Input() todo:todo = new todo(0, "", false);
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
     private todoService: TodoService
-
   ) {}
 
   ngOnInit(): void {
@@ -26,7 +25,7 @@ export class ToDoComponent implements OnInit{
 
   getToDo(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.todoService.getToDoById(id)
+    this.todoService.getTodoByID(id)
       .subscribe(todo => this.todo = todo);
   }
 
@@ -34,12 +33,8 @@ export class ToDoComponent implements OnInit{
     this.location.back()
   }
 
-  edit(): void {
-    this.location.back()
-  }
 
   delete(id: number): void {
-    this.todoService.deleteToDoById(id);
-    this.goBack();
+    this.todoService.deleteTodo(id).subscribe(() => console.log("user deleted"));
   }
 }
