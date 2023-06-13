@@ -6,9 +6,9 @@ export class todo {
   priority:number;
   description:string;
 
-  constructor(id: number, titel: string, done: boolean) {
+  constructor(id: number, title: string, done: boolean) {
     this.id = id;
-    this.title = titel;
+    this.title = title;
     this.done = done;
     this.priority = 1;
     this.dueDate = Date.now();

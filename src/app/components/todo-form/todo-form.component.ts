@@ -31,7 +31,9 @@ export class TodoFormComponent implements OnInit {
       this.todoService.updateTodo(this.todo).subscribe()
     }
 
-    this.router.navigateByUrl("/todolist")
+    setTimeout(() => {
+      this.router.navigateByUrl("/todolist")
+    }, 500);
   }
 
   checkEdit(){
