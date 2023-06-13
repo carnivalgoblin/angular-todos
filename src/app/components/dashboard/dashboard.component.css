@@ -4,20 +4,11 @@ h2 {
   margin-bottom: 20px;
 }
 
-a {
-  background-color: #eee;
-  display: inline-block;
+.link {
   color: black;
-     padding: 1rem;
-     border-radius: 4px;
-     font-size: 1rem;
-  margin: 20px 0.5rem;
- /*border: 1px solid red !important;*/
+  margin: 0 10px 50px 0;
 }
 
-a:hover {
-  background-color: #0056b3;
-}
 
 a:link { text-decoration: none; }
 

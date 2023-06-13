@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from "rxjs";
-import {todo} from "./entity/todo";
-import {todos} from "../todos";
+import {todo} from "../entity/todo";
+import {todos} from "../../todos";
 import {HttpClient} from "@angular/common/http";
 
 @Injectable({
@@ -63,6 +63,7 @@ export class TodoService {
       }
     }
   }
+
   generateUniqueToDoId(): number {
     const highestId = todos.reduce((maxId, todo) => Math.max(maxId, todo.id || 0), 0);
     return highestId + 1;

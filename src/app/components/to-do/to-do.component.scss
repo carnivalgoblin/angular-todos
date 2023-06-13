@@ -1,5 +1,10 @@
 .todo {
   margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.todo-button {
+  margin-right: 10px;
 }
 
 .todo div {
@@ -8,17 +13,22 @@
 }
 
 .todo .todo-id {
-  font-weight: bold;
+
 }
 
 .todo button {
-  margin-top: 20px;
+
   background-color: #eee;
   padding: 1rem;
   border-radius: 4px;
-  font-size: 1rem;
+
 }
 
 .todo button:hover {
   background-color: #0056b3;
+}
+
+.item-subline {
+  font-size: smaller;
+  color: lightgray;
 }

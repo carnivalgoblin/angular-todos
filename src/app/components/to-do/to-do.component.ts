@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {todo} from '../../entity/todo'
 import {ActivatedRoute} from "@angular/router";
 import {Location} from "@angular/common";
-import {TodoService} from "../../todo.service";
+import {TodoService} from "../../services/todo.service";
 
 @Component({
   selector: 'todo',

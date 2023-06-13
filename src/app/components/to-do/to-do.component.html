@@ -1,12 +1,21 @@
 <div class="todo">
 
-  <div class="todo-id">ID: {{todo.id}}</div>
+  <mat-list>
+    <mat-list-item>
+      <span matListItemTitle>{{todo.title}}</span>
+      <span class="item-subline" matListItemLine>Name</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle>{{todo.id}}</span>
+      <span class="item-subline" matListItemLine>ID</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle>{{ todo.status ? 'Erledigt' : 'Offen' }}</span>
+      <span class="item-subline" matListItemLine>Status</span>
+    </mat-list-item>
+  </mat-list>
 
-  <div>Name: {{todo.title}}</div>
-
-  <div>Status: {{todo.status}}</div>
-
-  <button type="button" (click)="delete(todo.id)">Delete</button>
-  <button type="button" routerLink="/todo/{{todo.id}}/edit">Editieren</button>
-  <button type="button" (click)="goBack()">Go Back</button>
+  <button mat-raised-button class="todo-button" type="button" (click)="delete(todo.id)">Delete</button>
+  <button mat-raised-button class="todo-button" type="button" routerLink="/todo/{{todo.id}}/edit">Editieren</button>
+  <button mat-raised-button class="todo-button" type="button" (click)="goBack()">Back</button>
 </div>

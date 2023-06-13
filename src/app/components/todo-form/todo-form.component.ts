@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../../todo.service';
+import { TodoService } from '../../services/todo.service';
 import {todo} from "../../entity/todo";
 import {ActivatedRoute} from "@angular/router";
+import {Location} from "@angular/common";
 import {todos} from "../../../todos";
 
 @Component({
@@ -12,9 +13,13 @@ import {todos} from "../../../todos";
 export class TodoFormComponent implements OnInit {
   todo:todo={title:"", id:this.todoService.generateUniqueToDoId(), status:false};
 
+  selected = this.todo.status;
+
   constructor(
       private todoService: TodoService,
-      private route: ActivatedRoute) { }
+      private route: ActivatedRoute,
+      private location: Location
+  ) { }
 
   ngOnInit() {
     this.checkEdit()
@@ -23,6 +28,8 @@ export class TodoFormComponent implements OnInit {
     this.todoService.saveTodoToTodos(this.todo);
 
     this.todo={title:"", id:0, status:false};
+
+    this.location.back()
   }
 
   checkEdit(){

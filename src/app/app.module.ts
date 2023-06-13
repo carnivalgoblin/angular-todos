@@ -10,6 +10,13 @@ import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { TodoFormComponent } from './components/todo-form/todo-form.component';
 import {FormsModule} from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import {MatListModule} from "@angular/material/list";
+import {MatIconModule} from "@angular/material/icon";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -24,7 +31,14 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
